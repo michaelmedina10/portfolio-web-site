@@ -2,6 +2,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 .main {
@@ -54,9 +55,9 @@
   justify-content: center;
   height: 100%;
   width: 80%;
-  background-color: #aaa5a5;
+  background-color: white;
   flex-grow: 1;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 @media (max-width: 750px) {

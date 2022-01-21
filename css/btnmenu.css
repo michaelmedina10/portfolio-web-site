@@ -1,16 +1,11 @@
-.btnMenu {
-  color: white;
-}
-
 .active {
   display: none !important;
 }
 
 .btnMenu {
   cursor: pointer;
-  color: white;
-  padding-left: 20px;
-  padding-top: 20px;
+  color: #000;
+  padding: 20px 0 20px 20px;
 }
 
 @media (max-width: 750px) {
