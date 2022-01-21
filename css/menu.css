@@ -1,0 +1,38 @@
+.left .menu {
+  list-style: none;
+}
+
+.left .menu-section .menu li {
+  /* border-bottom: 1px solid rgb(82, 2, 2); */
+  border-top: 0.8px solid #2b2929;
+  line-height: 50px;
+}
+
+.left .menu-section a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  text-indent: 40%;
+}
+
+.left .menu-section .menu li:hover {
+  transition: 1s;
+  background-color: rgb(201, 197, 197);
+}
+.left .menu-section .menu li:hover > .accessSubMenu {
+  color: #000;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.left .menu-section .menu .submenu a {
+  background-color: #1c1c1c;
+}
+.left .menu-section .menu .submenu a:hover {
+  background-color: rgb(39, 38, 38);
+  transition: background-color 0.5s linear;
+}
+
+.left .menu-section .menu .mostrar {
+  display: none;
+}

@@ -1,0 +1,13 @@
+.btnClose {
+  color: white;
+}
+
+.btnNotShow {
+  display: none !important;
+}
+
+.btnOpen {
+  color: white;
+  padding-left: 20px;
+  padding-top: 20px;
+}

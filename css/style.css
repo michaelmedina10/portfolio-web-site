@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(29, 2, 2);
+  font-family: sans-serif;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 20%;
+  /* background-color: rgb(53, 4, 4); */
+  background-color: #1c1c1c;
+  overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #1c1c1c;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+
+.left .logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  margin-bottom: 20px;
+}
+.left .logo .link-logo {
+  text-decoration: none;
+  color: white;
+}
