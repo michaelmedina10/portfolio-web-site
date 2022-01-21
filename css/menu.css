@@ -36,3 +36,9 @@
 .left .menu-section .menu .mostrar {
   display: none;
 }
+
+.menuActive {
+  display: flex;
+  position: absolute;
+  width: 50%;
+}

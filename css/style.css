@@ -55,10 +55,11 @@
   height: 100%;
   width: 80%;
   background-color: #aaa5a5;
-  overflow-y: scroll;
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .left {
     display: none;
   }
