@@ -4,9 +4,3 @@
   height: 30%;
   background-color: #4f4f4f;
 }
-
-.content {
-  flex-basis: 80%;
-  height: 70%;
-  border: 0.5px solid black;
-}

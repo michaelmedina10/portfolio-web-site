@@ -47,3 +47,23 @@
   text-decoration: none;
   color: white;
 }
+
+.right-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+  width: 80%;
+  background-color: #aaa5a5;
+  overflow-y: scroll;
+}
+
+@media (max-width: 700px) {
+  .left {
+    display: none;
+  }
+
+  .right-container {
+    width: 100%;
+  }
+}
