@@ -1,7 +1,5 @@
-console.log(window.location);
-
+var sizeScreen = window.matchMedia("(max-width:750px)");
 document.querySelectorAll(".accessSubMenu").forEach((accSubMenu) => {
-  console.log(accSubMenu.nextElementSibling);
   accSubMenu.onclick = (event) => {
     accSubMenu.nextElementSibling.classList.toggle("mostrar");
   };
@@ -12,15 +10,22 @@ function toggle(element, classe) {
 }
 
 document.querySelectorAll(".btnMenu").forEach((btn) => {
+  console.log(btn);
+  const leftMenu = document.querySelector(".left");
   btn.onclick = (event) => {
-    const btn = event.target;
-    const leftMenu = document.querySelector(".left");
-    toggle(leftMenu, "menuActive");
+    if (sizeScreen.matches) {
+      console.log(sizeScreen.matches);
+      console.log("cliquei no link");
+      const btn = event.target;
+      toggle(leftMenu, "menuActive");
+    } else {
+      console.log(sizeScreen.matches);
+      leftMenu.classList.remove("menuActive");
+    }
   };
 });
 
 document.querySelectorAll("[ajaxAttrib]").forEach((link) => {
-  console.log(link);
   link.onclick = (event) => {
     event.preventDefault();
     const mainContainer = document.querySelector(".mainContainer");
